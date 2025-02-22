@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Gabriela;
+    src: url(Gabriela/Gabriela-Regular.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway/Raleway-Regular.ttf);
+}
+body {
+    background-color: #778983;
+    font-family: Raleway;
+}
+#bodyLayout {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 1%;
+}
+#bodyLayoutPics {
+    display: grid;
+    grid-template-rows: 6% 86% 6%;
+    grid-template-columns: 1fr;
+    row-gap: 1%;
+}
+nav {
+    grid-row: 1/1;
+    grid-column: auto;
+    background-color: #D7e2b6;
+    font-family: Gabriela;
+}
+#navDetails {
+    padding: 1em;
+}
+#menu {
+    position: sticky;
+    bottom: 0;
+    background-color: #778983;
+    text-align: center;
+    padding: 1%;
+}
+button {
+    border: none;
+    color: rgba(0, 0, 0, 0);
+    background-color: #00000000;
+}
+i {
+    color: #faa96c;
+    padding: 1%;
+}
+#main {
+    grid-row: 2/2;
+    grid-column: auto;
+    background-color: #fad7be;
+    color: #002119;
+    font-size: 14px;
+}
+#picLayout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: 2%;
+}
+#pic1 {grid-row: 1; grid-column: 1; padding: 2% 0;}
+#pic2 {grid-row: 2; grid-column: 1; padding: 2% 0;}
+#pic3 {grid-row: 3; grid-column: 1; padding: 2% 0;}
+#pic4 {grid-row: 4; grid-column: 1; padding: 2% 0;}
+#pic5 {grid-row: 5; grid-column: 1; padding: 2% 0;}
+
+p {
+    padding: 1em;
+}
+footer {
+    grid-row: 3/3;
+    grid-column: auto;
+    background-color: #D7e2b6;
+    font-size: 10px;
+}
+footer ul {
+    list-style: none;
+    line-height: 2em;
+    text-align: center;
+    padding: 1em;
+}
