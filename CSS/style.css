@@ -12,7 +12,7 @@ body {
 }
 #bodyLayout {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
     grid-template-columns: 1fr;
     row-gap: 1%;
 }
@@ -51,7 +51,6 @@ nav p {
 }
 button {
     border: none;
-    color: #00000000;
     background-color: #00000000;
 }
 i {
@@ -66,7 +65,11 @@ i {
     background-color: #fad7be;
     color: #002119;
     font-size: 14px;
+    padding: 1% 1.7em;
 }
+h2 {font-family: Gabriela; font-size: 1.2em;}
+#main p {padding: 1%; font-size: 1.1em;}
+#uppgift {list-style: none;}
 
 #picMain {
     grid-row: 2/2;
@@ -76,6 +79,7 @@ i {
     font-size: 14px;
     margin: 2% 4%;
 }
+#picMain h2 {padding: 2em 0 0 2em;}
 #picLayout {
     display: grid;
     grid-template-columns: 1fr;
@@ -88,9 +92,7 @@ i {
 #pic4 {grid-row: 4; grid-column: 1; padding: 1em 0;}
 #pic5 {grid-row: 5; grid-column: 1; padding: 1em 0 2em 0;}
 
-p {
-    padding: 2em;
-}
+ol li::marker {font-weight: bold;}
 
 footer {
     grid-row: 3/3;
@@ -102,7 +104,7 @@ footer ul {
     list-style: none;
     line-height: 2em;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em 1.5em 0 1.5em;
 }
 
 /*Phones max-width:600px */
@@ -112,26 +114,42 @@ footer ul {
 
 /*Portrait tablets & larger phones min-width:600px */
 @media only screen and (min-width: 600px) {
-    body {font-size: 130%;}
-    #main {font-size: 100%;}
+    body {font-size: 120%;}
+    #main, #picMain {font-size: 100%;}
     #menu {display: none;}
     #bigMenu {
-        display:;
+        position: sticky;
+        background-color: #778983;
+        bottom: 0;
         text-align: center;
-        justify-content: center;
+        padding: 1%;
     }
+    #hmLbl {color: #000000; padding: 0 0.9em; margin: 0; font-family: Raleway;}
+    #bldLbl {color: #000000; padding: 0 0.6em; margin: 0; font-family: Raleway;}
+    #prcLbl {color: #000000; padding: 0 0.2em; margin: 0; font-family: Raleway;}
     i {
         color: #faa96c;
-        padding: 0.4rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
-    #bigMenu p {
-        position: sticky;
-        bottom: 0;
-        font-size: 0.8em;
+    button {
+        border-radius: 10%;
+        border: solid #000000 1px;
+        margin: 0 1%;
     }
-}
 
+    #picLayout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        padding: 1%;
+    }
+    #pic1 {grid-row: 1; grid-column: 1;}
+    #pic2 {grid-row: 1; grid-column: 2;}
+    #pic3 {grid-row: 2; grid-column: 1;}
+    #pic4 {grid-row: 2; grid-column: 2;}
+    #pic5 {grid-row: 3; grid-column: 1/span 2;}
+}
 @media screen {
     
 }
