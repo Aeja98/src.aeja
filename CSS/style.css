@@ -18,10 +18,11 @@ body {
 }
 #bodyLayoutPics {
     display: grid;
-    grid-template-rows: 6% 86% 6%;
+    grid-template-rows: auto;
     grid-template-columns: 1fr;
     row-gap: 1%;
 }
+
 nav {
     grid-row: 1/1;
     grid-column: auto;
@@ -31,22 +32,34 @@ nav {
 #navDetails {
     padding: 1em;
 }
+h1 {
+    padding: 0 0 0 1em;
+}
+nav p {
+    font-family: Raleway;
+    font-size: 0.7em;
+    padding: 0;
+    text-align: end;
+    margin: 0;
+}
+
 #menu {
     position: sticky;
     bottom: 0;
     background-color: #778983;
     text-align: center;
-    padding: 1%;
 }
 button {
     border: none;
-    color: rgba(0, 0, 0, 0);
+    color: #00000000;
     background-color: #00000000;
 }
 i {
     color: #faa96c;
-    padding: 1%;
+    padding: 0.4rem;
+    font-size: 1.2rem;
 }
+
 #main {
     grid-row: 2/2;
     grid-column: auto;
@@ -54,31 +67,71 @@ i {
     color: #002119;
     font-size: 14px;
 }
+
+#picMain {
+    grid-row: 2/2;
+    grid-column: auto;
+    background-color: #fad7be;
+    color: #002119;
+    font-size: 14px;
+    margin: 2% 4%;
+}
 #picLayout {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     text-align: center;
-    row-gap: 2%;
 }
-#pic1 {grid-row: 1; grid-column: 1; padding: 2% 0;}
-#pic2 {grid-row: 2; grid-column: 1; padding: 2% 0;}
-#pic3 {grid-row: 3; grid-column: 1; padding: 2% 0;}
-#pic4 {grid-row: 4; grid-column: 1; padding: 2% 0;}
-#pic5 {grid-row: 5; grid-column: 1; padding: 2% 0;}
+#pic1 {grid-row: 1; grid-column: 1; padding: 2em 0 1em 0;}
+#pic2 {grid-row: 2; grid-column: 1; padding: 1em 0;}
+#pic3 {grid-row: 3; grid-column: 1; padding: 1em 0;}
+#pic4 {grid-row: 4; grid-column: 1; padding: 1em 0;}
+#pic5 {grid-row: 5; grid-column: 1; padding: 1em 0 2em 0;}
 
 p {
-    padding: 1em;
+    padding: 2em;
 }
+
 footer {
     grid-row: 3/3;
     grid-column: auto;
     background-color: #D7e2b6;
-    font-size: 10px;
+    font-size: 0.7em;
 }
 footer ul {
     list-style: none;
     line-height: 2em;
     text-align: center;
     padding: 1em;
+}
+
+/*Phones max-width:600px */
+@media only screen and (max-width: 600px){
+#bigMenu {display: none;}
+}
+
+/*Portrait tablets & larger phones min-width:600px */
+@media only screen and (min-width: 600px) {
+    body {font-size: 130%;}
+    #main {font-size: 100%;}
+    #menu {display: none;}
+    #bigMenu {
+        display:;
+        text-align: center;
+        justify-content: center;
+    }
+    i {
+        color: #faa96c;
+        padding: 0.4rem;
+        font-size: 1.5rem;
+    }
+    #bigMenu p {
+        position: sticky;
+        bottom: 0;
+        font-size: 0.8em;
+    }
+}
+
+@media screen {
+    
 }

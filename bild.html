@@ -12,19 +12,15 @@
 <body id="bodyLayoutPic">
 <nav>
     <div id="navDetails">
-    <h1>Bildsida</h1>        
+    <h1>Bildsida</h1>
+    <p>Dagens datum:</p><p id="dateTime"></p>
     </div>
 </nav>
-<div id="menu">
-    <button type="button"><i class="fa-solid fa-house"></i></button>
-    <button type="button"><i class="fa-solid fa-image"></i></button>
-    <button type="button"><i class="fa-regular fa-pen-to-square"></i></button>
-</div>
 
-<div id="main">
+<div id="picMain">
     <section id="picLayout">
         <picture id="pic1">
-            <source srcset="/src/CSS/bilder/img1.webp " type="image/webp" width="50%">
+            <source srcset="/src/CSS/bilder/img1.webp" type="image/webp" width="50%">
             <source srcset="/src/CSS/bilder/img1-alt.jpg" type="image/jpg" width="50%">
             <img src="/src/CSS/bilder/img1-alt.jpg" alt="bild på min hund" width="50%">
         </picture>
@@ -58,5 +54,23 @@
         <li>Angelica Adolfsson</li>
     </ul>
 </footer>
+
+<div id="menu">
+    <a href="start.html"><button type="button"><i class="fa-solid fa-house"></i></button></a>
+    
+    <a href="bild.html"><button type="button"><i class="fa-solid fa-image"></i></button></a>
+    
+    <a href="process.html"><button type="button"><i class="fa-regular fa-pen-to-square"></i></button></a>
+</div>
+
+<div id="bigMenu">
+    <a href="start.html"><button type="button"><i class="fa-solid fa-house"></i></button></a>
+    
+    <a href="bild.html"><button type="button"><i class="fa-solid fa-image"></i></button></a>
+    
+    <a href="process.html"><button type="button"><i class="fa-regular fa-pen-to-square"></i></button></a>
+<p>Start Bilder Process</p>
+</div>
+
 </body>
 </html>
