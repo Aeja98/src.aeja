@@ -22,6 +22,12 @@ body {
     grid-template-columns: 1fr;
     row-gap: 1%;
 }
+#bodyLayoutProc {
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 1%;
+}
 
 nav {
     grid-row: 1/1;
@@ -53,6 +59,7 @@ button {
     border: none;
     background-color: #00000000;
 }
+button:hover, #button:active {background-color: #749287;}
 i {
     color: #faa96c;
     padding: 0.4rem;
@@ -92,7 +99,17 @@ h2 {font-family: Gabriela; font-size: 1.2em;}
 #pic4 {grid-row: 4; grid-column: 1; padding: 1em 0;}
 #pic5 {grid-row: 5; grid-column: 1; padding: 1em 0 2em 0;}
 
+#mainProc {
+    grid-row: 2/2;
+    grid-column: auto;
+    background-color: #fad7be;
+    color: #002119;
+    font-size: 16px;
+    padding: 1% 1.7em;
+}
+#mainProc h2 {font-size: 1.7em; padding: 0.5em 0 0 1em;}
 ol li::marker {font-weight: bold;}
+#mainProc #arbetsprocess {padding: 0.5em;}
 
 footer {
     grid-row: 3/3;
@@ -112,7 +129,7 @@ footer ul {
 #bigMenu {display: none;}
 }
 
-/*Portrait tablets & larger phones min-width:600px */
+/*Large screens min-width:600px */
 @media only screen and (min-width: 600px) {
     body {font-size: 120%;}
     #main, #picMain {font-size: 100%;}
@@ -149,7 +166,4 @@ footer ul {
     #pic3 {grid-row: 2; grid-column: 1;}
     #pic4 {grid-row: 2; grid-column: 2;}
     #pic5 {grid-row: 3; grid-column: 1/span 2;}
-}
-@media screen {
-    
 }

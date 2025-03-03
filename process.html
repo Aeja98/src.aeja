@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/ad2b0dbbf5.js" crossorigin="anonymous"></script>
 
 </head>
-<body id="bodyLayout">
+<body id="bodyLayoutProc">
 <nav>
     <div id="navDetails">
     <h1>Arbetsprocess</h1>
@@ -18,51 +18,55 @@
     </div>
 </nav>
 
-<div id="main">
+<div id="mainProc">
     <h2>Min arbetsprocess</h2>
     <ol>
-        <li><b>Läs igenom uppgiften</b>
+        <li id="arbetsprocess"><b>Läs igenom uppgiften</b>
             <ul>
                 <li>Jag började med att läsa igenom uppgiften samt teori & läsanvisningar och eftersom svenska inte är 
                     mitt modersmål brukar jag försöka gå igenom uppgiften med min sambo för att va säker att jag har förstått rätt.</li>
             </ul></li>
 
-        <li><b>Följ videon som finns i teori & läsanvisningar för att komma igång med npm och parcel</b></li>
+        <li id="arbetsprocess"><b>Följ videon som finns i teori & läsanvisningar för att komma igång med npm och parcel</b></li>
         
-        <li><b>Börja bygga grundstrukturen</b>
+        <li id="arbetsprocess"><b>Börja bygga grundstrukturen</b>
             <ul>
-                <li>Efter jag följde videon och hade mina toma sidor redo började jag bygga ihop grundstrukturen för mina sidor.</li>
+                <li>Efter jag följde videon och hade mina tomma sidor redo började jag bygga ihop grundstrukturen för mina sidor.</li>
                 <li>På tiktok hade jag hittat ett konto som lägger upp ideer för olika färg kombinationer. Jag hittade några jag gillade och ville testa hur de fungerade med en enkel webbsida.</li>
-                <li>Efter grunden va klar läste jag upp väldigt mycket i parcel dokumenten för att lägga in mina bilder korrekt och efter väldigt mycket om och men så fungerade det.</li>
+                <li>Efter grunden va klar läste jag upp mycket om parcel dokumenten för att lägga in mina bilder korrekt och efter väldigt mycket om och men så fungerade det.</li>
                 <li>Därefter försökte jag ladda upp i Git via visual studios men då gick väldigt mycket fel. Fram tills dess har jag bara sparat lokalt eftersom jag inte hade gjort så mycket.
                     Men under tiden det tog mig för att komma igång med NodeJs och parcel, bygga ihop grunden, headern och footern, och lägga in bilderna så krashade min dator. När den började igen så märkte jag att det va
                     väldigt mycket konstigt med min dator och det tog nästan en hel dag att hitta problemet, lösa det, och sen märka att jag måste börja om helt (Onedrive problem, inte Github som jag trodde då). Dagen efter började jag bygga upp allting igen och istället för att då 
                     lösa varför Git och jag inte kom så bra överens så ville jag fortsätta med uppgiften utan Git.</li>
             </ul></li>
 
-        <li><b>Börja...igen</b>
+        <li id="arbetsprocess"><b>Börja...igen</b>
             <ul>
                 <li>Efter jag hade börjat om så kunde jag äntligen gå vidare med detaljerna. Jag är osäker vad som inspirerade mitt meny val, men jag ville försöka ha en väldigt enkel meny som bara innehåller ikoner. 
                     Jag visste att den skulle behöva vara sticky och då ville jag ha den längst ner. Medans jag fösökte få det att fungera tänkte jag att det inte riktigt passar 
                     med större skärmar men istället för att göra en helt annorlunda meny, la jag bara in etiketter så det skulle va tydligare.</li>
                 <li>När jag hade en header, footer, meny på allt sidor samt bilderna jag ville ha på bildsidan kände jag att det bara va att göra hemsidan responsiv och sen va klar men då kom jag på att jag har inte gjort nånting men javascript. 
-                    Jag ville inte börja om med någon av delarna igen och visste inte vad jag skulle använda javascript för och tänkte att en enkel klocka och datum som uppdateras med sidan får duga just nu och om jag hittar på något roligare så lägger jag in det också</li>
-                <li></li>
+                    Jag ville inte börja om med någon av delarna igen och visste inte vad jag skulle använda javascript för och tänkte att en enkel klocka och datum som uppdateras med sidan får duga just nu och om jag hittar på något roligare så lägger jag in det också.</li>
             </ul></li>
 
-        <li><b>Responsiv</b>
+        <li id="arbetsprocess"><b>Responsiv</b>
             <ul>
                 <li>För att göra webbsidan responsiv hade jag inte för mycket att ändra mer än att lägga in etiketter till menyn, ändra om layouten till bilderna och göra all text lite större.</li>
             </ul></li>
 
-        <li><b>Automatisering</b>
+        <li id="arbetsprocess"><b>Automatisering</b>
             <ul>
-                <li></li>
+                <li>För att automatisera min webbsida har jag använt Parcel</li>
+                <li>Minifiering & Transpilering - Parcel minifierar automatiskt och komprimerar filerna och tar bort allting som inte behövs. Parcel stödjer även transpilering av javascript så det fungerar i äldre webbläsare. Jag har lagt in en browserlist i min package.json fil som inkluderar alla webbläsare Parcel har stöd för.</li>
+                <li>Optimering av bilder - För att optimera bilder använde jag ett picture element där jag la in mina bilder som webp filer med ett jpg alternativ så att de är kompatibel med flera webbläsare.</li>
             </ul></li>
 
-        <li><b>Publicering</b>
+        <li id="arbetsprocess"><b>Publicering</b>
             <ul>
-                <li></li>
+                <li>Parcel skapar en egen katalog som innehåller filerna till den färdiga webbplatsen vilket är de jag kommer använda för att publicera och lägga i en egen branch i mitt repo.</li>
+                <li>För att publicera har jag valt att använda Github Pages.</li>
+                <li>Innan jag använder bygg kommandot i terminalen sparar jag alla mina filer ifall min dator väljer att tappa allting igen.</li>
+                <li>När Jag har dubbelkollat igenom allting och läst igenom uppgiften några extra gånger så känner jag att webbsidan är klar och bygger ihop den.</li>
             </ul></li>
     </ol>
 </div>
