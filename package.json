@@ -1,0 +1,22 @@
+{
+  "name": "stuff",
+  "version": "1.0.0",
+  "author": "Angelica Adolfsson",
+  "license": "ISC",
+  "source": [
+    "src/index.html",
+    "src/bild.html",
+    "src/process.html"
+  ],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "sharp": "^0.33.5"
+  }
+}
