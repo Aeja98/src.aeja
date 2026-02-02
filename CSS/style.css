@@ -16,7 +16,7 @@ body {
     grid-template-columns: 1fr;
     row-gap: 1%;
 }
-#bodyLayoutPics {
+#bodyLayoutPic {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
@@ -64,7 +64,7 @@ button {
     margin: 0 1%;
     transition: all 0.3s;
 }
-button:hover, #button:active {
+button:hover, button:active {
     background-color: #537d6e; 
     color: #fff2ea;
     cursor: pointer;
@@ -113,7 +113,7 @@ h2 {font-family: Gabriela; font-size: 1.2em;}
 }
 #mainProc h2 {font-size: 1.7em; padding: 0.5em 0 0 1em;}
 ol li::marker {font-weight: bold;}
-#mainProc #arbetsprocess {padding: 0.5em;}
+#mainProc .arbetsprocess {padding: 0.5em;}
 
 footer {
     grid-row: 3/3;

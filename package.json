@@ -1,22 +1,20 @@
 {
-  "name": "stuff",
+  "name": "automatisering_publicering",
   "version": "1.0.0",
-  "author": "Angelica Adolfsson",
-  "license": "ISC",
-  "source": [
-    "src/index.html",
-    "src/bild.html",
-    "src/process.html"
-  ],
+  "description": "Filer som inte ska versionhanteras ska finnas med i en .gitignore-fil. Det är exempelvis \"node_modules\"-katalogen.",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "images": "node tools/images.js",
+    "dev": "vite",
+    "build": "npm run images && vite build",
+    "preview": "vite preview"
   },
-  "browserslist": [
-    "defaults"
-  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
   "devDependencies": {
-    "parcel": "^2.13.3",
-    "sharp": "^0.33.5"
+    "sharp": "^0.34.5",
+    "vite": "^7.3.1"
   }
 }

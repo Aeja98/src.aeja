@@ -1,6 +1,8 @@
 "use strict";
 
-let date = new Date();
-document.getElementById("dateTime").innerHTML = date.toLocaleString();
-
-console.log("Dagens datum:", date);
+const el = document.getElementById("dateTime");
+if (el) {
+  const date = new Date();
+  el.textContent = date.toLocaleString("sv-SE");
+  console.log("Dagens datum:", date);
+}
